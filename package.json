@@ -1,0 +1,29 @@
+{
+  "name": "nutribyte",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndwiv/nutribyte.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ndwiv/nutribyte/issues"
+  },
+  "homepage": "https://github.com/ndwiv/nutribyte#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "heroku": "^10.2.0",
+    "install": "^0.13.0",
+    "mongodb": "^6.14.0",
+    "mongoose": "^8.11.0",
+    "mongoose-int32": "^0.6.0",
+    "mongosh": "^2.4.0",
+    "npm": "^11.1.0"
+  }
+}
