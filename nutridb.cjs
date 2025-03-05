@@ -10,7 +10,7 @@ const branded_food_schema = new mongoose.Schema({
     marketCountry: String,
     gtinUpc: String,
     ingredients: String,
-    servingSize: numberInt,
+    servingSize: int32,
     servingSizeUnit: String,
     householdServingFullText: String,
     brandedFoodCategory: String,
@@ -28,10 +28,9 @@ router.get("/hello", function (req, res) {
 router.get("/food", async function(req, res) {
     try {
          const searchString  = req.query.searchString;
-         const food = await Food.findOne();
          
- /*       const food = await Food.find({
-         description: {"$regex": searchString, "$options": 'i'}}); */
+        const food = await Food.find({
+         description: {"$regex": searchString, "$options": 'i'}}); 
          console.log(food.length);
         if (!food) {
             return res.send("<h2>No documents found</h2>");
