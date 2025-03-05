@@ -28,7 +28,7 @@ router.get("/hello", function (req, res) {
 router.get("/food", async function(req, res) {
     try {
          const searchString  = req.query.searchString;
-         const food = await foor.findOne();
+         const food = await Food.findOne();
          
  /*       const food = await Food.find({
          description: {"$regex": searchString, "$options": 'i'}}); */
