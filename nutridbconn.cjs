@@ -12,4 +12,8 @@ try {
     console.log("Mongodb connection failed")
 }
 
+mongoose.connection.on('connected', () => {
+    console.log('Connected to MongoDB Atlas:', mongoose.connection.name);
+});
+
 module.exports =  mongoose;

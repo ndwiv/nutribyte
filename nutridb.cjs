@@ -28,7 +28,7 @@ router.get("/hello", function (req, res) {
 // Test for MongoDB connectivity 
 router.get("/food", async function(req, res) {
     try {
-         const searchString  = req.query.searchString || "";
+        const searchString  = req.query.searchString || "";
         const food = await Food.find({}); 
         /*const food = await Food.find({
          description: {"$regex": searchString, "$options": 'i'}}); */
