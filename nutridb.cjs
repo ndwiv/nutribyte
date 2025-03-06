@@ -11,7 +11,7 @@ const branded_food_schema = new mongoose.Schema({
     marketCountry: String,
     gtinUpc: String,
     ingredients: String,
-    servingSize: Number,
+    servingSize: numberInt,
     servingSizeUnit: String,
     householdServingFullText: String,
     brandedFoodCategory: String,
